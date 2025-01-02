@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-color: #f4c3b4;
+  border: 25px solid rgba(225, 157, 203, 0.6);
+  padding: 15px;
+  width: 950px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.Heading {
+  text-align: center;
+}
+
+.logosection {
+  display: flex; /* Enable flexbox layout */
+  justify-content: space-between; /* Distribute space evenly between the items */
+  align-items: center; /* Vertically align images to the center */
+  gap: 20px; /* Optional: Add some spacing between the images */
+}
+
+.qrimage {
+  width: 200px;
+  height: 200px;
+}
+
+.symbol {
+  width: 260px;
+  height: 200px;
+}
+
+.passport_photo {
+  width: 200px;
+  height: 200px;
+}
+
+.secondHeading {
+  text-align: center;
+}
+
+.Biodata input {
+  margin: 10px;
+  padding: 5px;
+}
+
+#regno {
+  margin-left: 15px;
+}
+
+#Mname {
+  margin-left: 83px;
+}
+
+#Fname {
+  margin-left: 88px;
+}
+
+#name {
+  margin-left: 40px;
+}
+
+.table {
+  width: 100%; /* Make the table responsive */
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 8px; /* Add some padding for better readability */
+}
+
+thead th {
+  background-color: #f0f0f0; /* Optional: Add a light gray background to the header */
+}
+.certificate {
+  background-color: #f4c3b4; /* Same background color as the form */
+  border: 25px solid rgba(225, 157, 203, 0.6); /* Same border style as the form */
+  padding: 15px;
+  width: 950px;
+  margin: 20px auto;
+  overflow-x: hidden;
+}
+.certificate h1,
+.certificate h2 {
+  text-align: center;
+}
+
+.certificate .logosection {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Optional: space between images */
+  margin-bottom: 20px; /* Optional: space below the images */
+}
+
+.certificate .qrimage,
+.certificate .passport_photo {
+  width: 200px;
+  height: 200px;
+}
+.certificate .symbol {
+  width: 300px;
+  height: 200px;
+}
