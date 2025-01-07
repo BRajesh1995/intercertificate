@@ -229,3 +229,84 @@ tfoot {
     height: 80px;
   }
 }
+.Biodata {
+  display: grid;
+  grid-template-columns: 150px 1fr; /* Fixed width for labels and flexible width for inputs */
+  grid-gap: 10px 15px; /* Spacing between grid items */
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.Biodata label {
+  text-align: right; /* Align labels to the right */
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.Biodata input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Input fields will take the remaining space */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.Biodata span {
+  grid-column: span 2; /* Allow spans to take the full width */
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .Biodata {
+    grid-template-columns: 1fr; /* Stack labels and inputs on smaller screens */
+  }
+
+  .Biodata label {
+    text-align: left; /* Align labels to the left */
+  }
+}
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Enables horizontal scrolling */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Prevent table from shrinking too much */
+}
+
+.table th,
+.table td {
+  text-align: center;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+thead th {
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 768px) {
+  .table th,
+  .table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .table th,
+  .table td {
+    padding: 6px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .table th,
+  .table td {
+    padding: 4px;
+    font-size: 10px;
+  }
+}
